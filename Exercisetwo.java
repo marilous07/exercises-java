@@ -12,6 +12,18 @@ The second column contains the integer, expressed in exactly 3 digits; if the or
 
 */
 
+import java.util.Scanner;
+
 public class Exercisetwo {
     public static void Main (String args[]){
+         Scanner in = new Scanner(System.in);
+       
+       System.out.println("================================");
+       while (in.hasNext()) {
+           
+           String stg = in.next();
+           int intg = in.nextInt();
+       System.out.printf("%-15s%03d%n", stg, intg);
+    }
+    System.out.println("================================");
 }}
