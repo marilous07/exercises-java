@@ -13,9 +13,22 @@ There are three lines of output:
     On the third line, print Int: followed by the unaltered integer read from stdin.
 To make the problem easier, a portion of the code is already provided in the editor.
 Note: If you use the nextLine() method immediately following the nextInt() method, recall that nextInt() reads integer tokens; because of this, the last newline character for that line of integer input is still queued in the input buffer and the next nextLine() will be reading the remainder of the integer line (which is empty).*/
+import java.util.Scanner;
+
 public class Exercisethree {
 
     public static void main(String[] args) {
+        
+        Scanner in = new Scanner(System.in);
+        int intg = in.nextInt();
+        double dbl = in.nextDouble();
+        in.nextLine();
+        String stg = in.nextLine();
+        
+        System.out.println("String: "+ stg);
+        System.out.println("Double: "+ dbl);
+        System.out.println("Int: "+ intg);
+        
         }
 }
 
