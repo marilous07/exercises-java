@@ -15,12 +15,11 @@ public class Exercisefive {
             int a = in.nextInt();
             int b = in.nextInt();
             int n = in.nextInt();
-            int powerOfTwo = 1; // since 2^0 is 1
+            int sum=a;
 
             for (int j = 0; j < n; j++) {
-                a += powerOfTwo * b;
-                System.out.print(a + " ");
-                powerOfTwo = powerOfTwo << 1;
+                sum += Math.pow(2,j) * b;
+                System.out.print(sum + " ");
             }
             System.out.println();
         }
