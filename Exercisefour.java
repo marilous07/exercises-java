@@ -24,10 +24,14 @@ public class Exercisefour {
 
         int N = Integer.parseInt(bufferedReader.readLine().trim());
         int result;
+        if (N >= 2 && N <= 20){
         for (int i=1; i<=10; i++){
             result = N*i;
             System.out.println(N + "x" + i + "="+result);
         }
+    } else {
+        System.out.println(" N must be between 2 and 20.");
+    }
         bufferedReader.close();
     }
 }
