@@ -24,6 +24,8 @@ public class Exercisetwo {
            String stg = in.next();
            int intg = in.nextInt();
        System.out.printf("%-15s%03d%n", stg, intg);
+
+       in.close();
     }
     System.out.println("================================");
 }}

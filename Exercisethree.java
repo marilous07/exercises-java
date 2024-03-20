@@ -29,6 +29,7 @@ public class Exercisethree {
         System.out.println("Double: "+ dbl);
         System.out.println("Int: "+ intg);
         
+        in.close();
         }
 }
 

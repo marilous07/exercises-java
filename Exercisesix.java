@@ -6,5 +6,8 @@ public class Exercisesix {
     public static void main(String[] args) {
         Scanner T = new Scanner (System.in);
         
+
+
+        T.close();
     }
 }
