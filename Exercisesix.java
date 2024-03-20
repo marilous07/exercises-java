@@ -4,10 +4,15 @@ import java.util.Scanner;
 public class Exercisesix {
 
     public static void main(String[] args) {
-        Scanner T = new Scanner (System.in);
-        
+        Scanner in = new Scanner (System.in);
+            try {
+                int T = Integer.parseInt(in.nextLine());
+                System.out.println(T);
+            } catch (Exception e) {
+                    System.out.println("User input was not a number.");
+            }
+            
 
-
-        T.close();
+        in.close();
     }
 }
