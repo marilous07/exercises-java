@@ -10,7 +10,10 @@ public class Exercisesix {
         String c = "int and long.";
         String d = "long.";
 
-        for (int i = 0; i<6; i++){
+        int numInputs = in.nextInt();
+        in.nextLine();
+
+        for (int i = 0; i<numInputs; i++){
         String input = in.nextLine();
             try {
                 long T = Long.parseLong(input);
