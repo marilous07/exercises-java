@@ -9,8 +9,10 @@ public class Exercisesix {
         String b = "short, int and long.";
         String c = "int and long.";
         String d = "long.";
+
+        String input = in.nextLine();
             try {
-                long T = Long.parseLong(in.nextLine());
+                long T = Long.parseLong(input);
                 
                 if (T>=Byte.MIN_VALUE && T<=Byte.MAX_VALUE){
                     System.out.println("The "+T+" can be fitted in "+a);
@@ -29,7 +31,11 @@ public class Exercisesix {
                 }
 
             } catch (NumberFormatException e) {
-                    System.out.println("User input was not a number.");
+                if (input.length() > Long.toString(Long.MAX_VALUE).length()) {
+                System.out.println("The input is too large to fit into any primitive data type.");
+            } else {
+                System.out.println("User input was not a valid number.");
+            }
             }
             
 
