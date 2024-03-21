@@ -10,25 +10,25 @@ public class Exercisesix {
         String c = "int and long.";
         String d = "long.";
             try {
-                int T = Integer.parseInt(in.nextLine());
+                long T = Long.parseLong(in.nextLine());
                 
-                if (T<100){
+                if (T>=Byte.MIN_VALUE && T<=Byte.MAX_VALUE){
                     System.out.println("The "+T+" can be fitted in "+a);
                 }
-                else if (T>=100){
-                    System.out.println("The "+T+" can be fitted in "+a);
-                }
-                else if(T>=10000){
+                else if(T>=Short.MIN_VALUE && T<=Short.MAX_VALUE){
                     System.out.println("The "+T+" can be fitted in "+b);
                 }
-                else if(T>=100000){
+                else if(T>=Integer.MIN_VALUE && T<=Integer.MAX_VALUE){
                     System.out.println("The "+T+" can be fitted in "+c);
                 }
-                else if(T>=1000000){
+                else if(T<=Long.MAX_VALUE){
                     System.out.println("The "+T+" can be fitted in "+d);
                 }
+                else {
+                    System.out.println("T can't be fitted anywhere");
+                }
 
-            } catch (Exception e) {
+            } catch (NumberFormatException e) {
                     System.out.println("User input was not a number.");
             }
             
