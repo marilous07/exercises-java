@@ -10,6 +10,7 @@ public class Exercisesix {
         String c = "int and long.";
         String d = "long.";
 
+        for (int i = 0; i<6; i++){
         String input = in.nextLine();
             try {
                 long T = Long.parseLong(input);
@@ -35,7 +36,7 @@ public class Exercisesix {
                 System.out.println("User input was not a valid number.");
             }
             }
-            
+        }
 
         in.close();
     }
