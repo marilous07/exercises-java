@@ -26,13 +26,11 @@ public class Exercisesix {
                 else if(T<=Long.MAX_VALUE){
                     System.out.println("The "+T+" can be fitted in "+d);
                 }
-                else {
-                    System.out.println("T can't be fitted anywhere");
-                }
+                
 
             } catch (NumberFormatException e) {
                 if (input.length() > Long.toString(Long.MAX_VALUE).length()) {
-                System.out.println("The input is too large to fit into any primitive data type.");
+                System.out.println("T can't be fitted anywhere.");
             } else {
                 System.out.println("User input was not a valid number.");
             }
