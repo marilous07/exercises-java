@@ -33,7 +33,7 @@ public class Exercisesix {
                 
 
             } catch (NumberFormatException e) {
-                if (input.length() > Long.toString(Long.MAX_VALUE).length()) {
+                if (input.length() >= Long.toString(Long.MAX_VALUE).length()) {
                 System.out.println("T can't be fitted anywhere.");
             } else {
                 System.out.println("User input was not a valid number.");
