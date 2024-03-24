@@ -11,9 +11,9 @@ public class Exercisenine {
 
         
         if (s.equals(Integer.toString(n))) {
-            
+            System.out.println("Good job");
         } else {
-            
+            System.out.println("Wrong answer");
         }
         in.close();
         }
