@@ -15,6 +15,6 @@ public class Exercisenine {
         } else {
             
         }
-
+        in.close();
         }
 }
