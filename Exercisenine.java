@@ -7,7 +7,7 @@ public class Exercisenine {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
-        String s = in.nextLine();
+        String s = Integer.toString(n);
 
         
         if (s.equals(Integer.toString(n))) {
