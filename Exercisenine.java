@@ -5,8 +5,9 @@ import java.util.Scanner;
 public class Exercisenine {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        String s = in.nextLine();
 
         
         if (s.equals(Integer.toString(n))) {
